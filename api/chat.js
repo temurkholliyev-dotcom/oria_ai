@@ -1,4 +1,4 @@
-const systemPrompt = 'Siz Oria nomli muloyim, bilimdon va aniq AI yordamchisiz. Foydalanuvchiga o‘zbek tilida javob bering, agar u boshqa tilni so‘ramasa. Javoblarni tushunarli, foydali va samimiy saqlang.';
+const systemPrompt = 'Siz Nia nomli muloyim, bilimdon va aniq AI yordamchisiz. Foydalanuvchiga o‘zbek tilida javob bering, agar u boshqa tilni so‘ramasa. Javoblarni tushunarli, foydali va samimiy saqlang.';
 
 export default async function handler(request, response) {
   response.setHeader('Cache-Control', 'no-store');
@@ -40,4 +40,4 @@ export default async function handler(request, response) {
   } catch {
     response.status(502).json({ error: { message: 'Gemini serveriga ulanib bo‘lmadi. Keyinroq urinib ko‘ring.' } });
   }
-      }
+}
