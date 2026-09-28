@@ -1,4 +1,4 @@
-# Oria AI
+# Nia AI
 
 ## Local run
 

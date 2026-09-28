@@ -7,7 +7,7 @@ import { fileURLToPath } from 'node:url';
 const root = path.dirname(fileURLToPath(import.meta.url));
 const port = Number(process.env.PORT || 4173);
 const model = process.env.GEMINI_MODEL || 'gemini-3.8-flash';
-const systemPrompt = 'Siz Oria nomli muloyim, bilimdon va aniq AI yordamchisiz. Foydalanuvchiga o‘zbek tilida javob bering, agar u boshqa tilni so‘ramasa. Javoblarni tushunarli, foydali va samimiy saqlang.';
+const systemPrompt = 'Siz Nia nomli muloyim, bilimdon va aniq AI yordamchisiz. Foydalanuvchiga o‘zbek tilida javob bering, agar u boshqa tilni so‘ramasa. Javoblarni tushunarli, foydali va samimiy saqlang.';
 const contentTypes = { '.css': 'text/css; charset=utf-8', '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.png': 'image/png', '.jpg': 'image/jpeg', '.svg': 'image/svg+xml' };
 
 function send(response, status, body, contentType = 'application/json; charset=utf-8') {

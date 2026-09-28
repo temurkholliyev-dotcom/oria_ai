@@ -1,6 +1,6 @@
 const API_ENDPOINT = '/api/chat';
 const STORAGE_KEY = 'oria-gemini-key';
-const SYSTEM_PROMPT = 'Siz Oria nomli muloyim, bilimdon va aniq AI yordamchisiz. Foydalanuvchiga o‘zbek tilida javob bering, agar u boshqa tilni so‘ramasa. Javoblarni tushunarli, foydali va samimiy saqlang.';
+const SYSTEM_PROMPT = 'Siz Nia nomli muloyim, bilimdon va aniq AI yordamchisiz. Foydalanuvchiga o‘zbek tilida javob bering, agar u boshqa tilni so‘ramasa. Javoblarni tushunarli, foydali va samimiy saqlang.';
 const QUIZ_QUESTIONS = [
   { category: 'HTML', question: 'HTML qisqartmasi nimani anglatadi?', options: ['HyperText Markup Language', 'HighText Machine Language', 'HyperTransfer Markup Logic', 'Home Tool Markup Language'], correctIndex: 0 },
   { category: 'HTML', question: 'Veb-sahifada havola yaratish uchun qaysi teg ishlatiladi?', options: ['<a>', '<link>', '<href>', '<nav>'], correctIndex: 0 },
@@ -253,14 +253,14 @@ function createMessage(role, text = '', state = '') {
   if (role === 'assistant') {
     const label = document.createElement('div');
     label.className = 'message-label';
-    label.textContent = 'Oria';
+    label.textContent = 'Nia';
     content.append(label);
   }
 
   if (state === 'thinking') {
     const dots = document.createElement('div');
     dots.className = 'thinking';
-    dots.setAttribute('aria-label', 'Oria javob tayyorlamoqda');
+    dots.setAttribute('aria-label', 'Nia javob tayyorlamoqda');
     dots.innerHTML = '<span></span><span></span><span></span>';
     content.append(dots);
   } else {
